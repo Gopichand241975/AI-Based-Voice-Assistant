@@ -23,7 +23,7 @@ reply on screen. Great for demos, screenshots, and grading.
    - "what is the date"
    - "open google"
    - "who is Albert Einstein"
-   - "your name"
+   - "your name: voice assitant"
    You can also just click the quick-suggestion chips under the chat box.
 
 
