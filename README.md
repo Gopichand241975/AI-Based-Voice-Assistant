@@ -1,4 +1,4 @@
-# AI-Based Voice Assistant — Major Project (Option A)
+# AI-Based Voice Assistant
 
 A basic Python voice assistant that listens to voice commands, converts
 speech to text, performs an action, and replies back using speech.
@@ -46,19 +46,6 @@ pip install -r requirements.txt
   https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio and install it with
   `pip install <file>.whl`)
 
-- **macOS:**
-  ```
-  brew install portaudio
-  pip install pyaudio
-  ```
-
-- **Linux (Ubuntu/Debian):**
-  ```
-  sudo apt-get install portaudio19-dev python3-pyaudio espeak
-  pip install pyaudio
-  ```
-  (`espeak` is required so `pyttsx3` can actually speak on Linux.)
-
 ### 3. Run the program
 ```
 python voice_assistant.py
@@ -84,28 +71,5 @@ You will see a menu:
 
 ---
 
-## Troubleshooting
-- **"Could not understand audio"** → speak clearly, reduce background noise,
-  and make sure your microphone is set as the default recording device.
-- **`pyttsx3` gives no sound on Linux** → install `espeak`
-  (`sudo apt-get install espeak`).
-- **No internet** → Speech-to-text (Google Speech API) and Wikipedia search
-  both need an active internet connection; time/date and opening local apps
-  work fully offline.
-- If the microphone or speakers are not available at all, simply choose
-  **Text Mode (2)** from the menu — all other logic and features work the
-  same way, just using keyboard input instead of the microphone.
 
----
 
-## For Your Project Submission
-1. Take a screenshot of the program running (menu + a command + response).
-2. Take screenshots of at least 2–3 different features being demonstrated
-   (e.g. time, opening an app, Wikipedia search).
-3. Place all screenshots in a folder named: `MajorProject_YourName`
-4. Prepare your documentation PDF named: `MajorProject_YourName.pdf`,
-   including: Project Title, Problem Statement, Objective, Tools &
-   Technologies, System Architecture/Model Description, Code Explanation,
-   Screenshots, Results, Conclusion, and Future Scope.
-5. Submit everything through the Google Form as instructed (do not use email
-   or any other platform).
