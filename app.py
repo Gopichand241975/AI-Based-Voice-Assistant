@@ -130,7 +130,6 @@ def process_command(raw_command):
 def index():
     return render_template("index.html")
 
-
 @app.route("/api/command", methods=["POST"])
 def api_command():
     data = request.get_json(silent=True) or {}
