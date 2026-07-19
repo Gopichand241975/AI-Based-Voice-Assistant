@@ -108,7 +108,7 @@ You should see:
 Go to **http://127.0.0.1:5000** in **Google Chrome** (best support for
 in-browser speech recognition).
 
-⚠️ Important: open the URL above — do **not** double-click `index.html`
+Important: open the URL above — do **not** double-click `index.html`
 directly. The page only works when served by Flask.
 
 ### 4. Using it
