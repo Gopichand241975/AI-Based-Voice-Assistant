@@ -1,5 +1,5 @@
 # AI-Based Voice Assistant — Major Project
-![Voice feature demonstration](Screenshots/voice%10-%10feature%10demonstration.png)
+![Voice feature demonstration](Screenshots/voice%10-%20feature%20demonstration.png)
 
 
 A Python voice assistant that listens to voice commands, converts speech to
