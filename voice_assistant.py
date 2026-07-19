@@ -1,19 +1,12 @@
 """
-AI-Based Voice Assistant
--------------------------
+AI-Based Voice Assistant:
+
 A basic voice assistant that can:
     1. Listen to voice commands (Speech to Text)
     2. Process the command
     3. Perform an action (tell time, open apps, search Wikipedia, etc.)
     4. Respond back using speech (Text to Speech)
 
-Tools Used:
-    - SpeechRecognition (speech to text)
-    - pyttsx3          (text to speech)
-    - wikipedia        (optional information search)
-
-Author : <Your Name>
-Project: AI-Based Voice Assistant (Major Project - Option A)
 """
 
 import datetime
@@ -31,9 +24,9 @@ except ImportError:
     WIKIPEDIA_AVAILABLE = False
 
 
-# ---------------------------------------------------------------------------
+
 # Text to Speech Engine Setup
-# ---------------------------------------------------------------------------
+
 try:
     engine = pyttsx3.init()
     engine.setProperty("rate", 170)      # speaking speed
@@ -57,9 +50,9 @@ def speak(text):
             pass
 
 
-# ---------------------------------------------------------------------------
+
 # Speech to Text (Listening)
-# ---------------------------------------------------------------------------
+
 def listen_command():
     """
     Capture audio from the microphone and convert it to text.
@@ -90,9 +83,9 @@ def listen_command():
         return ""
 
 
-# ---------------------------------------------------------------------------
+
 # Actions / Features
-# ---------------------------------------------------------------------------
+
 def tell_time():
     current_time = datetime.datetime.now().strftime("%I:%M %p")
     speak(f"The current time is {current_time}")
@@ -182,9 +175,9 @@ def greet_user():
         speak("Good evening! I am your voice assistant. How can I help you?")
 
 
-# ---------------------------------------------------------------------------
+
 # Command Processing (Main Logic)
-# ---------------------------------------------------------------------------
+
 def process_command(command):
     """
     Match the recognized command text against known keywords
@@ -227,9 +220,9 @@ def process_command(command):
     return True
 
 
-# ---------------------------------------------------------------------------
+
 # Text-Mode Fallback (useful when no microphone is available / for testing)
-# ---------------------------------------------------------------------------
+
 def run_text_mode():
     speak("Running in text mode. Type your commands below.")
     greet_user()
@@ -239,9 +232,9 @@ def run_text_mode():
         running = process_command(command)
 
 
-# ---------------------------------------------------------------------------
+
 # Voice-Mode Main Loop
-# ---------------------------------------------------------------------------
+
 def run_voice_mode():
     greet_user()
     running = True
@@ -250,9 +243,9 @@ def run_voice_mode():
         running = process_command(command)
 
 
-# ---------------------------------------------------------------------------
+
 # Entry Point
-# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
     print("=" * 55)
     print("        AI-BASED VOICE ASSISTANT - MAJOR PROJECT")
