@@ -13,6 +13,7 @@ import datetime
 import os
 import sys
 import webbrowser
+import aifc
 
 import speech_recognition as sr
 import pyttsx3
