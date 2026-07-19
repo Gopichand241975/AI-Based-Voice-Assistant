@@ -85,7 +85,7 @@ def search_wikipedia(command):
         return "Something went wrong while searching Wikipedia."
 
 
-# COMMAND PROCESSING (core logic - same rules as voice_assistant.py)
+# COMMAND PROCESSING (core logic -- same rules as voice_assistant.py)
 
 
 def process_command(raw_command):
