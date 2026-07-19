@@ -6,14 +6,6 @@ A basic voice assistant that can:
     2. Process the command
     3. Perform an action (tell time, open apps, search Wikipedia, etc.)
     4. Respond back using speech (Text to Speech)
-
-Tools Used:
-    - SpeechRecognition (speech to text)
-    - pyttsx3          (text to speech)
-    - wikipedia        (optional information search)
-
-Author : <Your Name>
-Project: AI-Based Voice Assistant (Major Project - Option A)
 """
 
 import datetime
