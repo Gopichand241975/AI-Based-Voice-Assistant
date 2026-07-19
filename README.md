@@ -8,6 +8,12 @@ speech to text, performs an action, and replies back using speech.
 - `requirements.txt` — Python packages needed
 - `README.md` — this file (setup + run instructions)
 
+## Tools Used:
+    - SpeechRecognition (speech to text)
+    - pyttsx3          (text to speech)
+    - wikipedia        (optional information search)
+
+
 ## Features
 - Tell the current time / date
 - Open apps (Notepad, Calculator) or websites (Google, YouTube)
