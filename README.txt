@@ -1,5 +1,5 @@
 AI-Based Voice Assistant - Major Project
-==========================================
+
 
 Files:
 - voice_assistant.py   -> Original voice (microphone + speaker) version
@@ -7,9 +7,9 @@ Files:
 - templates/index.html -> Chat-style front end used by app.py
 - requirements.txt     -> All required packages
 
---------------------------------------------------
+
 Web Interface (app.py)
---------------------------------------------------
+
 No microphone needed. Type a command in a browser and get an instant
 reply on screen. Great for demos, screenshots, and grading.
 
@@ -32,9 +32,9 @@ Notes:
 - app.py needs an internet connection for Wikipedia search; it works on
   any machine since it uses a web page instead of a microphone.
 
---------------------------------------------------
+
 Install Required Packages
---------------------------------------------------
+
    pip install SpeechRecognition pyttsx3 pyaudio
 
 If pyaudio fails to install on Windows, try:
