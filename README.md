@@ -180,15 +180,3 @@ another click) before testing the mic again.
 
 ---
 
-## For Your Project Submission
-1. Take a screenshot of the program running (desktop menu, or the web
-   page with the IN/OUT log visible).
-2. Take screenshots of at least 2–3 different features being demonstrated
-   (e.g. time, opening a website, Wikipedia search).
-3. Place all screenshots in a folder named: `MajorProject_YourName`
-4. Prepare your documentation PDF named: `MajorProject_YourName.pdf`,
-   including: Project Title, Problem Statement, Objective, Tools &
-   Technologies, System Architecture/Model Description, Code Explanation,
-   Screenshots, Results, Conclusion, and Future Scope.
-5. Submit everything through the Google Form as instructed (do not use
-   email or any other platform).
