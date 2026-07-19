@@ -1,13 +1,15 @@
 AI-Based Voice Assistant - Major Project
+==========================================
 
 Files:
-- voice_assistant.py  -> Original voice (microphone + speaker) version
-- app.py              -> NEW: Web interface version (type a command, see the reply)
+- voice_assistant.py   -> Original voice (microphone + speaker) version
+- app.py               -> Web interface version (type a command, see the reply)
 - templates/index.html -> Chat-style front end used by app.py
+- requirements.txt     -> All required packages
 
-
-*Web Interface (app.py) 
-
+--------------------------------------------------
+Web Interface (app.py)
+--------------------------------------------------
 No microphone needed. Type a command in a browser and get an instant
 reply on screen. Great for demos, screenshots, and grading.
 
@@ -23,16 +25,22 @@ reply on screen. Great for demos, screenshots, and grading.
    - "what is the date"
    - "open google"
    - "who is Albert Einstein"
-   - "your name: voice assitant"
+   - "your name"
    You can also just click the quick-suggestion chips under the chat box.
 
-
 Notes:
-- Both versions share the same command logic (time, date, open app/site,
-  Wikipedia search, greetings, exit).
-- voice_assistant.py requires an internet connection (Google Speech
-  Recognition API and Wikipedia) and a working microphone/speakers.
-- app.py only needs an internet connection for Wikipedia search; it works
-  on any machine since it uses a web page instead of a microphone.
-- pyaudio installation (for voice_assistant.py) varies by OS - see comments
-  at top of voice_assistant.py.
+- app.py needs an internet connection for Wikipedia search; it works on
+  any machine since it uses a web page instead of a microphone.
+
+--------------------------------------------------
+Install Required Packages
+--------------------------------------------------
+   pip install SpeechRecognition pyttsx3 pyaudio
+
+If pyaudio fails to install on Windows, try:
+   pip install pipwin
+   pipwin install pyaudio
+
+Note: If you are only running app.py (the web version), you do NOT
+need SpeechRecognition, pyttsx3, or pyaudio - just run:
+   pip install flask wikipedia
